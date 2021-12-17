@@ -1,4 +1,4 @@
-[{
+{
   "condition": "minecraft:entity_scores",
   "entity": "this",
   "scores": {
@@ -12,23 +12,3 @@
     }
   }
 }
-,
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-  "condition": "minecraft:entity_scores",
-  "entity": "this",
-  "scores": {
-    "sb_player_dx": {
-      "min": 0,
-      "max": 0
-    },
-    "sb_player_dz": {
-      "min": 0,
-      "max": 0
-    }
-  }
-}
-
-        }
-]

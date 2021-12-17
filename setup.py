@@ -26,7 +26,8 @@ def preprocess_config(config):
 
 
 def get_insanity_gain_name(dist):
-    return f"ig_zone_{dist}"
+    dist_str = str(dist) if dist is not None else "0"
+    return f"ig_zone_{dist_str}"
 
 
 def get_distance_zone_name(min_dist, max_dist):
@@ -58,7 +59,7 @@ def make_predicates(config, predicates_dir):
 
 
 def make_insanity_gain_predicates(insanity_gains, predicates_dir):
-    distances = [0] + [ig["distance"] for ig in insanity_gains] + [None]
+    distances = [None] + [ig["distance"] for ig in insanity_gains] + [None]
     for i in range(len(distances) - 1):
         predicate = make_dist_predicate(distances[i], distances[i+1])
         filename = get_insanity_gain_name(distances[i]) + ".json"
