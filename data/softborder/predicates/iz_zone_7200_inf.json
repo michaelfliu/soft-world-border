@@ -1,0 +1,15 @@
+
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "sb_insanity": {
+      "min": -7200,
+      "max": 7200
+    }
+  }
+}
+
+        }

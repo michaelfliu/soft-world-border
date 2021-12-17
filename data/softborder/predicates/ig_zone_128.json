@@ -1,0 +1,34 @@
+[{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "sb_player_dx": {
+      "min": -256,
+      "max": 256
+    },
+    "sb_player_dz": {
+      "min": -256,
+      "max": 256
+    }
+  }
+}
+,
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "sb_player_dx": {
+      "min": -128,
+      "max": 128
+    },
+    "sb_player_dz": {
+      "min": -128,
+      "max": 128
+    }
+  }
+}
+
+        }
+]

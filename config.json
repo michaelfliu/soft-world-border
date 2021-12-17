@@ -1,0 +1,173 @@
+{
+    "insanityGain": [
+        {
+            "distance": 64,
+            "amount": 1
+        },
+        {
+            "distance": 128,
+            "amount": 3
+        },
+        {
+            "distance": 256,
+            "amount": 7
+        },
+        {
+            "distance": 512,
+            "amount": 15
+        },
+        {
+            "distance": 512,
+            "amount": 31
+        },
+        {
+            "distance": 1024,
+            "amount": 63
+        },
+        {
+            "distance": 2048,
+            "amount": 127
+        },
+        {
+            "distance": 4096,
+            "amount": 255
+        },
+        {
+            "distance": 8192,
+            "amount": 2047
+        }
+    ],
+    "distanceZones": [
+    ],
+    "insanityZones": [
+        {
+            "minInsanity": 1,
+            "effect": {
+                "id": "minecraft:glowing"
+            }
+        },
+        {
+            "minInsanity": 120,
+            "effect": {
+                "id": "minecraft:weakness"
+            }
+        },
+        {
+            "minInsanity": 2400,
+            "effect": {
+                "id": "minecraft:hunger"
+            }
+        },
+        {
+            "minInsanity": 4800,
+            "effect": {
+                "id": "minecraft:mining_fatigue",
+                "type": {
+                    "period": 30,
+                    "pulse": 5
+                }
+            }
+        },
+        {
+            "minInsanity": 7200,
+            "effect": {
+                "id": "minecraft:blindness",
+                "type": {
+                    "period": 30,
+                    "pulse": 5
+                }
+            }
+        },
+        {
+            "minInsanity": 7200,
+            "effect": {
+                "id": "minecraft:slowness"
+            }
+        },
+        {
+            "minInsanity": 12000,
+            "effect": {
+                "id": "minecraft:nausea",
+                "type": {
+                    "period": 30,
+                    "pulse": 10
+                }
+            }
+        },
+        {
+            "minInsanity": 14000,
+            "effect": {
+                "id": "minecraft:poison",
+                "type": {
+                    "period": 30,
+                    "pulse": 10
+                }
+            }
+        },
+        {
+            "minInsanity": 16000,
+            "maxInsanity": 24000,
+            "effect": {
+                "id": "minecraft:weakness",
+                "level": 2,
+                "type": {
+                    "period": 30,
+                    "pulse": 10
+                }
+            }
+        },
+        {
+            "minInsanity": 18000,
+            "effect": {
+                "id": "minecraft:wither",
+                "type": {
+                    "period": 30,
+                    "pulse": 5
+                }
+            }
+        },
+        {
+            "minInsanity": 24000,
+            "effect": {
+                "id": "minecraft:weakness",
+                "level": 3,
+                "type": {
+                    "period": 30,
+                    "pulse": 15
+                }
+            }
+        },
+        {
+            "minInsanity": 48000,
+            "effect": {
+                "id": "minecraft:hunger",
+                "level": 3
+            }
+        },
+        {
+            "minInsanity": 96000,
+            "effect": {
+                "id": "minecraft:poison",
+                "level": 2
+            }
+        },
+        {
+            "minInsanity": 120000,
+            "effect": {
+                "id": "minecraft:poison",
+                "level": 3
+            }
+        },
+        {
+            "minInsanity": 240000,
+            "effect": {
+                "id": "minecraft:instant_damage",
+                "level": 2,
+                "type": {
+                    "period": 30,
+                    "pulse": 1
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "sb_player_dx": {
+      "min": -8192,
+      "max": 8192
+    },
+    "sb_player_dz": {
+      "min": -8192,
+      "max": 8192
+    }
+  }
+}
+
+        }
