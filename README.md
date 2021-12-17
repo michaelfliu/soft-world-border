@@ -16,7 +16,35 @@ When the player has enough insanity points, they will start experiencing effects
 
 ## Dependencies
 
-If you are happy with the existing config, then no dependencies other than Minecraft 1.18 are required.
+If you are happy with the existing config, then no dependencies other than Minecraft 1.18 are required. Otherwise, you just need some up-to-date version of Python3.
+
+---
+
+## Installation
+
+If you do not want to modify the default config, then skip to step 1.5 or 2
+
+### Step 1 (Modifying the Config)
+
+See the `Config.json` section below for tips on how to configure the datapack. After making your modifications, run `python setup.py` to generate the necessary minecraft functions. A few command line switches are available:
+
+* `-f` (`--force`): overwrite existing generated files
+* `-o [DIR]` (`--output`): set the root of the datapack directory to output files into, default `.`
+* `-c` (`--config`): path to the config file to use, default `./config.json`
+
+### Step 1.5 (Compressing the datapack)
+
+As long as you don't have a crazy number of config lines, the datapack should be small enough to stay in uncompressed form. Otherwise, you can create a `.zip` archive containing all of the datapack files.
+
+### Step 2 (Adding the datapack to Minecraft)
+
+Copy the entire datapack folder (or .zip) to your Minecraft world's `datapacks` folder.
+
+### Step 3 (Enabling the datapack)
+
+After loading the world, you should be able to run `/function softborder:init` to initialize the datapack and print the menu to chat. Go to the origin point you would like to set, and click `[Set Origin]` in the chat menu. Then, click `[Start]` to enable the datapack.
+
+To disable the datapack or change the origin, type `/function softborder:menu` and click `[Stop]`.
 
 ---
 
@@ -128,12 +156,6 @@ It is also possible to define periodic effects using the `type` field. Simply gi
     }
 }
 ```
-
----
-
-## Installing
-
-After setting up the configuration to your liking, 
 
 ---
 
