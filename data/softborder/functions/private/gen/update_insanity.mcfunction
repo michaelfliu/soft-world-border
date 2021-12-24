@@ -1,4 +1,4 @@
-execute as @a if predicate softborder:ig_zone_0 if score @s sb_player_under_cover matches 1.. run scoreboard players set @s sb_insanity 0
+execute as @a if predicate softborder:ig_zone_0 if score @s sb_blocks_above_player matches 1.. run scoreboard players set @s sb_insanity 0
 execute as @a if predicate softborder:ig_zone_64 run scoreboard players add @s sb_insanity 1
 execute as @a if predicate softborder:ig_zone_128 run scoreboard players add @s sb_insanity 3
 execute as @a if predicate softborder:ig_zone_256 run scoreboard players add @s sb_insanity 7

@@ -1,4 +1,5 @@
-execute in minecraft:overworld as @a[distance=0..] positioned as @s if block ~ ~ ~ air store success score @s sb_player_under_cover run clone ~ ~2 ~ ~ 319 ~ ~ ~2 ~ masked force
-execute in minecraft:the_nether as @a[distance=0..] positioned as @s if block ~ ~ ~ air store success score @s sb_player_under_cover run clone ~ ~2 ~ ~ 255 ~ ~ ~2 ~ masked force
-execute in minecraft:the_end as @a[distance=0..] positioned as @s if block ~ ~ ~ air store success score @s sb_player_under_cover run clone ~ ~2 ~ ~ 255 ~ ~ ~2 ~ masked force
-execute as @a if score @s sb_player_under_cover matches 0 run scoreboard players add @s sb_insanity 100
+execute in minecraft:overworld as @a[distance=0..] positioned as @s store result score @s sb_blocks_above_player if blocks ~ ~ ~ ~ 319 ~ ~ ~ ~ masked
+execute in minecraft:the_nether as @a[distance=0..] positioned as @s store result score @s sb_blocks_above_player if blocks ~ ~ ~ ~ 255 ~ ~ ~ ~ masked
+execute in minecraft:the_end as @a[distance=0..] positioned as @s store result score @s sb_blocks_above_player if blocks ~ ~ ~ ~ 255 ~ ~ ~ ~ masked
+
+execute as @a if score @s sb_blocks_above_player matches 0 run scoreboard players add @s sb_insanity 100

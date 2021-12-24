@@ -188,7 +188,7 @@ def make_insanity_update(insanity_gains, datapack_path):
 
 
 def make_insanity_clear_command(pred_name):
-    return f"execute as @a if predicate softborder:{pred_name} if score @s sb_player_under_cover matches 1.. run scoreboard players set @s sb_insanity 0"
+    return f"execute as @a if predicate softborder:{pred_name} if score @s sb_blocks_above_player matches 1.. run scoreboard players set @s sb_insanity 0"
 
 
 def make_insanity_update_command(pred_name, amount):
